@@ -1,0 +1,46 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>javascript functions experiment</title>
+</head>
+<body>
+<h2>Smart calculator</h2>
+Number 1:
+<input type="number"id="num1"><br><br>
+Number 2:
+<input type="number"id="num2"><br><br>
+<button onclick="add()">Add</button>
+<button onclick="subtract()">subtract</button>
+<button onclick="multiply()">multiply</button>
+<button onclick="divide()">divide</button>
+<h3 id="result"></h3>
+<script>
+function add()
+{
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML="Result:"+(a+b);
+}
+function subtract()
+{
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML="Result:"+(a-b);
+}
+
+function multiply()
+{
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML="Result:"+(a*b);
+}
+
+function divide()
+{
+let a=Number(document.getElementById("num1").value);
+let b=Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML="Result:"+(a/b);
+}
+</script>
+</body>
+</html>
